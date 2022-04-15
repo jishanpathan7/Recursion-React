@@ -27,7 +27,7 @@ const explorer = {
       ],
     },
     {
-      name: 'src',
+      name: 'src1',
       isFolder: true,
       items: [
         {
