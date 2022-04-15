@@ -1,22 +1,16 @@
 import React, {useState} from "react";
 import "./style.css";
+import Folder from "./Components/Folder.js";
+import explorer from "./Data/folderData";
 
 export default function App() {
-  const [todo, setTodo] = useState([
 
-  ])
-
-  const handleTodo = () => {
-    setTodo(...todo,"New Todo")
-    console.log("handle")
-  }
+  
   return (
     <>
-    <div>    {todo}</div>
     <div>
-  
-      <button onClick={handleTodo}>add todo</button>
-      </div>
+  <Folder explorer={explorer}/>
+  </div>
      </>
   );
 }
