@@ -5,14 +5,17 @@ export default function Folder({ explorer }) {
   if(explorer.isFolder) {
   return (
     <div>
-      <span onClick={() => setExpand(!expand)}>
+      <span onClick={() => setExpand(!expand)} style={{
+        color:"red"
+      }}>
         {explorer.name}
         <br/>
         </span>
         <div style = {{
           display: expand ? "block" :"none",
           paddingLeft: "15px",
-          cursor:"pointer"
+          cursor:"pointer",
+          color:"green"
         }}>
           {
             explorer.items.map(item => {
