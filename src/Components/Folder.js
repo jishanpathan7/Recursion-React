@@ -6,7 +6,8 @@ export default function Folder({ explorer }) {
   return (
     <div>
       <span onClick={() => setExpand(!expand)} style={{
-        color:"red"
+        color:"red",
+        cursor: "pointer",
       }}>
         {explorer.name}
         <br/>
@@ -19,8 +20,7 @@ export default function Folder({ explorer }) {
         }}>
           {
             explorer.items.map(item => {
-              return <Folder explorer={item} style={{
-           }} />
+              return <Folder explorer={item}  />
             })
           }
         </div>
